@@ -254,7 +254,8 @@ header.scrolled .logo {
     background-color: var(--main-color-dark-1);
 }
 
-.btn .secondary-btn {
+.btn.secondary-btn {
+    position: relative;
     background-color: transparent;
     color: var(--main-color-1);
     font-weight: 500;
@@ -263,5 +264,36 @@ header.scrolled .logo {
     border-bottom: 2.5px solid var(--main-color-2);
     border-radius: 0px;
     padding: 0.15rem 0;
-    
+}
+
+.btn.secondary-btn::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2.5px;
+    bottom: -2.5px;
+    left: 0;
+    background-color: var(--main-color-1);
+    transition: 0.3s ease-in-out;
+}
+
+.btn.secondary-btn:hover::before {
+    width: 100%;
+}
+
+.showcase-image {
+    position: relative;
+    width:  100%;
+    min-height: calc(110% + 120px);
+    background-color: var(--main-color-1);
+    margin-top: -120px;
+    border-radius: 0 0 80px 80px;
+}
+
+.showcase-image .person {
+    position: absolute;
+    width: 95%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
