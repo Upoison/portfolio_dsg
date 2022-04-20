@@ -254,7 +254,7 @@ header.scrolled .logo {
     background-color: var(--main-color-dark-1);
 }
 
-.btn.secondary-btn {
+.btn .secondary-btn {
     background-color: transparent;
     color: var(--main-color-1);
     font-weight: 500;
@@ -265,4 +265,3 @@ header.scrolled .logo {
     padding: 0.15rem 0;
     
 }
-
