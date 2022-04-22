@@ -283,9 +283,13 @@ header.scrolled .logo {
 
 .showcase-image {
     position: relative;
-    width:  100%;
-    min-height: calc(110% + 120px);
-    background-color: var(--main-color-1);
+    width: 100%;
+    min-height: calc(100% + 120px);
+    background-image: linear-gradient(
+        124deg,
+        var(--main-color-1) 50%
+        var(--main-color-2) 50%
+    );
     margin-top: -120px;
     border-radius: 0 0 80px 80px;
 }
