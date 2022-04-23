@@ -207,6 +207,7 @@ header.scrolled .logo {
     padding: 120px 0;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .showcase-area .container {
@@ -307,9 +308,13 @@ header.scrolled .logo {
     width: 112px;
 }
 
+.square {
+    width: 70px;
+}
+
 .showcase-area .circle {
     position: absolute;
-    width: 190%;
+    width: 190px;
     left: 0;
     top: 80%;
     transform: translate(-50%, -50%);
@@ -321,3 +326,13 @@ header.scrolled .logo {
     top: 30%;
     transform: translate(-50%, -50%);
 }
+
+.showcase-area .square {
+    position: absolute;
+    left: 25%;
+    bottom: 120px;
+    transform: translate(-50%, -50%);
+}
+
+/* ------------------ About secction Styling-------------- */
+
