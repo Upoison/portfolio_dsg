@@ -352,6 +352,10 @@ header.scrolled .logo {
     margin: 3rem 0 4rem;
 }
 
+.icon {
+    width: 60px;
+}
+
 .st0 {
     fill: var(--bg-color-3);
 }
