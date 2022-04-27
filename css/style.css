@@ -346,10 +346,51 @@ header.scrolled .logo {
 .about .container {
     display: grid;
     grid-template-columns: 1.05fr 1fr;
+    align-items: center;
 }
 
 .about .text {
     margin: 3rem 0 4rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 190px 190px;
+    grid-template-rows: 190px 190px;
+    justify-content: center;
+    column-gap: 2.5rem;
+    row-gap: 100px;
+    margin-right: 2rem;
+}
+
+.about-card {
+    background-color: var(--bg-color-2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s transform;
+}
+
+.about-card:nth-child(1) {
+    border-radius: 40px 40px 5px 40px;
+}
+
+.about-card:nth-child(2) {
+    margin-top: 50px;
+    border-radius: 40px 40px 40px 5px;
+}
+
+.about-card:nth-child(3) {
+    margin-top: -50px;
+    border-radius: 40px 5px 40px 40px;
+}
+
+.about-card:nth-child(4) {
+    border-radius: 5px 40px 40px 40px;
 }
 
 .icon {
@@ -366,4 +407,12 @@ header.scrolled .logo {
 
 .st2 {
     fill: var(--heading-color);
+}
+
+.about-card h3 {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1rem;
+    letter-spacing: 0.3px;
 }
