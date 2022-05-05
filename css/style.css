@@ -505,8 +505,8 @@ header.scrolled .logo {
     fill: var(--bg-color-3);
     stroke-width: 5px;
     stroke: var(--main-color-1);
-    stroke-dasharray: 427;
     stroke-linecap: round;
+    stroke-dasharray: 427;
     stroke-dashoffset: 427;
 }
 
