@@ -30,6 +30,15 @@ sr.reveal(".showcase-image", { origin: "top", delay: 700});
 
 /* ------------------ Skills Progress Bar Animation -------------- */
 
-function skillCounter(){
-    console.log("You've reached the skills section");
+function hasReached(el) {
+    let topPosition = el.getBoundingClientRect().top;
+    
+    if(window.innerHeight >= topPosition + el.offsetHeight) return true;
+    return false;
+}
+
+function skillCounter() {
+    if (!hasReached(first_skill)) return;
+
+    progress_bars.forEach((p) => (p.style.animation ="progress 2s ease-in-out"));
 }
