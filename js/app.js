@@ -40,5 +40,7 @@ function hasReached(el) {
 function skillCounter() {
     if (!hasReached(first_skill)) return;
 
-    progress_bars.forEach((p) => (p.style.animation ="progress 2s ease-in-out"));
+    progress_bars.forEach((p) => (p.style.animation = "progress 2s ease-in-out"));
 }
+
+what ta fack is happening 
