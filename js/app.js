@@ -2,7 +2,7 @@ const header = document.querySelector("header");
 
 const first_skill = document.querySelector(".skill:first-child");
 const sk_counters = document.querySelectorAll(".counter span");
-const progress_bars = document.querySelectorAll(".skills svg");
+const progress_bars = document.querySelectorAll(".skills svg circle");
 
 window.addEventListener("scroll", () =>{
     skillCounter();
@@ -37,10 +37,8 @@ function hasReached(el) {
     return false;
 }
 
-function skillCounter() {
+function skillsCounter() {
     if (!hasReached(first_skill)) return;
 
-    progress_bars.forEach((p) => (p.style.animation = "progress 2s ease-in-out"));
+    progress_bars.forEach((p) => (p.style.animation = "progress 2s ease-in-out forwards"));
 }
-
-what ta fack is happening 
