@@ -42,3 +42,10 @@ function skillsCounter() {
 
     progress_bars.forEach((p) => (p.style.animation = "progress 2s ease-in-out forwards"));
 }
+
+
+
+
+// Create a Portfolio Website Using HTML & CSS & JavaScript | Light & Dark Theme
+//https://www.youtube.com/watch?v=kk5dZVfCpgk
+// minute 53:00
